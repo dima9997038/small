@@ -6,15 +6,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TestController {
-    private final UserRepository userRepository;
+//    private final UserRepository userRepository;
 
-    public TestController(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
+//    public TestController(UserRepository userRepository) {
+//        this.userRepository = userRepository;
+//    }
 
     @GetMapping
     public String test() {
-        userRepository.findAll().forEach(System.out::println);
+//        userRepository.findAll().forEach(System.out::println);
         return "test";
     }
 }
