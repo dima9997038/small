@@ -16,6 +16,7 @@ public class TestController {
     public String test() {
         String result = "";
         for (User user : userRepository.findAll()) {
+            System.out.println(user);
             result += user.toString();
         }
         return result;
